@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahya Al-Dallal's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Yahya Al-Dallal</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- <div class="hero-badge">Available for projects</div> -->
+                <h1 class="hero-title">
+                    Building Scalable
+                    <span class="gradient-text">Flutter Applications</span>
+                </h1>
+                <p class="hero-subtitle">Creating easy-to-use mobile apps that work well on all devices with fancy design and fast performance.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <!-- <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Apps Built</div>
+                    </div> -->
+                    <div class="stat">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <!-- <div class="stat">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Downloads</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-preview">
+                            <div class="app-header"></div>
+                            <div class="app-content">
+                                <div class="content-block"></div>
+                                <div class="content-block"></div>
+                                <div class="content-block small"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element flutter"></div>
+                    <div class="floating-element dart"></div>
+                    <div class="floating-element firebase"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">About Me</div>
+                    <h2 class="section-title">Passionate Mobile Developer</h2>
+                    <p class="lead">I enjoy creating easy-to-use and reliable apps with Flutter. Always excited to learn new skills and improve my work.</p>
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                 <img src="images/flutter.png" alt="" width="20px">
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Flutter Development</h4>
+                                <p>Cross-platform mobile apps with native performance</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>UI/UX Design</h4>
+                                <p>Intuitive interfaces with modern design principles</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>App Optimization</h4>
+                                <p>Performance tuning and smooth user experiences</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="expertise-content">
+                                <h4>Backend Integration</h4>
+                                <p>Firebase, REST APIs, and cloud services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects-header">
+                <div class="section-badge">My Work</div>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Latest mobile applications I've built with Flutter</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/riwaa.png" alt="Riwaa App Screenshots">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="btn-icon" onclick="openLightbox('project1')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://github.com/StrangerFelix/riwaa" class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Plant Care</div>
+                        <h3>Riwaa - Smart Plant Monitoring System App</h3>
+                        <p>A mobile app that tracks soil moisture in real-time using sensors and ESP32. It automatically waters plants when needed, helping users keep their plants healthy with minimal effort. Data is synced through Firebase for control and monitoring.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">Bloc</span>
+                        </div>
+                        <!-- <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>10K+ Downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 Rating</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/bf.png" alt="Baghdad Fair App Screenshots" style="object-fit: cover;">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="btn-icon" onclick="openLightbox('project2')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="https://github.com/StrangerFelix/baghdadFair" class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Exhibitions</div>
+                        <h3>Baghdad Fair - معرض بغداد الدولي</h3>
+                        <p>An application that provides schedules, locations, and details of fairs and exhibitions in Baghdad for easy event discovery.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Rest API</span>
+                            <span class="tech-tag">Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/chees.png" alt="E-Commerce Clothing App Screenshots" style="object-fit: cover;">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="btn-icon" onclick="openLightbox('project3')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <!-- <a href="#" class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-Commerce</div>
+                        <h3>Chees - Clothing App</h3>
+                        <p>A stylish mobile shopping app designed for a clothing brand, featuring product browsing, category filters, and a smooth checkout experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Bloc</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/bookify.png" style="object-fit: cover;" alt="Book Store App">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="btn-icon" onclick="openLightbox('project4')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="#" class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-Commerce</div>
+                        <h3>Bookify - Book Store</h3>
+                        <p>A clean and user-friendly Flutter application for browsing, saving, and reading books. Features include search functionality, favorites, and detailed book info — all designed with smooth navigation and modern UI.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Bloc</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x800/EC4899/FFFFFF?text=Social+Media+App" alt="Social Media App Screenshots">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="btn-icon" onclick="openLightbox('project5')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="#" class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-Commerce</div>
+                        <h3>3laga - Clothing App</h3>
+                        <p>Social networking app with photo sharing, stories, messaging, and community features. Built for seamless social interactions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Camera</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 6 -->
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x800/06B6D4/FFFFFF?text=Weather+App+Design" alt="Weather App Screenshots">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <button class="btn-icon" onclick="openLightbox('project6')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <a href="#" class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Weather</div>
+                        <h3>WeatherPro - Weather Forecast</h3>
+                        <p>Beautiful weather app with detailed forecasts, weather maps, alerts, and location-based recommendations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">Animations</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-badge">Contact Us</div>
+                    <h2 class="section-title">Let's Build Something Amazing</h2>
+                    <p class="contact-description"> Feel free to reach out for collaborations, questions, or just to say hello. I’m always open to new opportunities and ideas.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:ifelixridge007@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>ifelixridge007@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/yahya-jawad-93b644220/" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>LinkedIn</h4>
+                                <p>Connect with me professionally</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/StrangerFelix" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>GitHub</h4>
+                                <p>View my code repositories</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Type</label>
+                            <select id="project" name="project" required>
+                                <option value="">Select project type</option>
+                                <option value="new-app">New App Development</option>
+                                <option value="existing-app">Existing App Enhancement</option>
+                                <option value="ui-redesign">UI/UX Redesign</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">Yahya Al-Dallal</span>
+                </div>
+                <p>&copy; 2025 Yahya Al-Dallal's Portfolio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <div class="lightbox-image">
+                <img id="lightbox-img" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
